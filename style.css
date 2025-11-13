@@ -1,13 +1,11 @@
 body {
     margin: 0px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Roboto", system-ui, sans-serif;
 }
-
 a {
     text-decoration: none;
     color: inherit;
 }
-
 
 /*-----------------------------------------*/
 
@@ -20,13 +18,20 @@ nav {
     align-items: center;
     height: 75px;
     padding: 20px;
-    background-color: rgb(159, 155, 155);
+    background-color: rgb(143 141 128);
 }
 
 nav #logo {
-    height: 25px;
+    height: 45px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 #e7e9bb;
 }
-
+nav .button{
+    background-color: #4a4551;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+}
 nav ul {
     display: flex;
     justify-content: space-between;
@@ -43,18 +48,16 @@ header {
     margin 0px;
     display: flex;
     justify-content: center;
-    background-color: rgb(207, 142, 142);
     gap: 75px;
     padding: 25px;
-
+    background: linear-gradient(#403b4a,#e7e9bb);
 }
-
-header h1 {
-    font-size: 50px;
-}
-
 header span {
     font-size: 25px;
+        font-weight: 600;
+}
+header h1 {
+    font-size: 50px;
 }
 
 header div {
@@ -62,27 +65,35 @@ header div {
     flex-direction: column;
     gap: 25px;
 }
-
 header ul {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 80%;  
     padding: 0px;
     margin: 0px;
     list-style: none;
 }
-
-header .button {
+header h4{
     background-color: black;
     color: white;
     border-radius: 15px;
     padding: 10px;
 }
-
 header #logo {
     width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 20px 50px 0 #77746f;;
 }
-
+header .button{
+    background-color:black;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+}
+ header img{
+    width: 25px;
+ }
+ 
 /*-----------------------------------------*/
 main {
     border: 0px;
@@ -90,51 +101,181 @@ main {
     display: flex;
     align-items: center;
     flex-direction: column;
-    align-items: center;
 }
-
-.jeux {
+#section1 {
     width: 100%;
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 25px;
+   
+   
 }
-
+#section2 {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+   
+}
+#section3 {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+   
+}
+/*-----------------------------------------*/
+#jeux article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+   
+}
+#jeux div{
+display: flex;
+        align-items: flex-end;
+        flex-wrap: nowrap;
+        gap: 25px;
+}
 #jeux {
+   margin: 0;
     display: flex;
-}
-
-.jeux article {
-    background-color: azure;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 25%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+        padding-top: 25px;
 
 }
-
-.jeux article img {
+#jeux .button{
+    background-color: #4a4551;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+   font-size: 15px;
+    font-style: italic;
+}
+#jeux img {
     width: 100%;
 }
+#jeux p{
+    text-align: justify;
+}
+/*-----------------------------------------*/
 
-main section:not(.jeux) {
-    margin 0px;
-    width: 100%;
+#avantages{
     display: flex;
     justify-content: center;
-    background-color: rgb(207, 142, 142);
-    gap: 75px;
+    gap: 25px;
+    width: 100%;
+}
+ 
+#avantages article {
+       width: 200px;
+    display: flex;
+    justify-content: center;
     padding: 25px;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(218 219 178);
+}
+#avantages img{
+    width: 50px;
+    height: 50px;
 }
 
-.stars img {
-    width: 25px;
+/*-----------------------------------------*/
+.identité,.avis{
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+}
+.identité img{
+    width: 70px;
+    object-fit: cover;
+}
+
+/*-----------------------------------------*/
+
+#témoignages{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+    align-items: flex-end;
+}
+#témoignages article div {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*-----------------------------------------*/
+
+.stars{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.stars img{
+    width: 15px;
 }
 
 
 /*-----------------------------------------*/
+.span span{
+    font-weight: 500;
+    font-size: 50px;
+}
+.avis span{
+    font-weight: bold;
+}
+
+/*-----------------------------------------*/
 footer{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    padding: 0px;
+    background-color: rgb(143 141 128);
+    gap: 50px;
+}
+ 
+footer img{
+    height: 50px;
+}
+footer ul img{
+    height: 30px;
+}
+footer article{
+    display: flex;
+    align-items: flex-end;
+    padding: 0px;
     margin: 0px;
-    width: 100%;
-    background-color: grey;
+    gap: 10px;
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+}
+footer ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15%;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
 }
